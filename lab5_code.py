@@ -1,15 +1,15 @@
 class Student:
     __name = None
-    __lastName = None
+    __last_name = None
     __marks = None
 
-    def __init__(self, name, lastName, marks=None):
+    def __init__(self, name, last_name, marks=None):
         self.__marks = marks or []
-        self.__lastName = lastName
+        self.__last_name = last_name
         self.__name = name
 
     def get_info(self):
-        print("Name:", self.__name, "Last name:", self.__lastName, "Rating:", self.rating())
+        print("Name:", self.__name, "Last name:", self.__last_name, "Rating:", self.rating())
 
     def rating(self):
         """
