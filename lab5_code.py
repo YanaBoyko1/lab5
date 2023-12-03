@@ -1,15 +1,15 @@
 class Student:
-    __name = None
-    __last_name = None
-    __marks = None
+    name = None
+    last_name = None
+    marks = None
 
     def __init__(self, name, last_name, marks=None):
-        self.__marks = marks
-        self.__last_name = last_name
-        self.__name = name
+        self.marks = marks
+        self.last_name = last_name
+        self.name = name
 
     def get_info(self):
-        print("Name:", self.__name, "Last name:", self.__last_name, "Rating:", self.rating())
+        print("Name:", self.name, "Last name:", self.last_name, "Rating:", self.rating())
 
     def rating(self):
         """
@@ -17,9 +17,9 @@ class Student:
         Returns:
         - float: Student's rating (average mark).
         """
-        if not self.__marks:
+        if not self.marks:
             return 0
-        return sum(self.__marks) / len(self.__marks)
+        return sum(self.marks) / len(self.marks)
 
 
 class Group:
@@ -32,9 +32,9 @@ class Group:
     def remove_student(self, student):
         if student in self.students:
             self.students.remove(student)
-            print(f"Student {student._Student__name} removed from the group.")
+            print(f"Student {student.name} removed from the group.")
         else:
-            print(f"Student {student._Student__name} is not in the group.")
+            print(f"Student {student.name} is not in the group.")
 
     def get_info(self):
         for student in self.students:
