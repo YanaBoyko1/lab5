@@ -21,18 +21,13 @@ class Student:
             return 0
         return sum(self.__marks) / len(self.__marks)
 
-        Returns:
-        - float: Student's rating (average mark).
-        """
-        return sum(self.__marks) / len(self.__marks)
-
 
 class Group:
     def __init__(self):
-        self.__students = []
+        self.students = []
 
     def add_student(self, student):
-        self.__students.append(student)
+        self.students.append(student)
 
     def remove_student(self, student):
         if student in self.students:
