@@ -4,7 +4,7 @@ class Student:
     __marks = None
 
     def __init__(self, name, last_name, marks=None):
-        self.__marks = marks or []
+        self.__marks = marks
         self.__last_name = last_name
         self.__name = name
 
