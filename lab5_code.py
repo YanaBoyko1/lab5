@@ -1,5 +1,4 @@
 class Student:
-    
     def __init__(self, name, last_name, marks=None):
         self.marks = marks
         self.last_name = last_name
