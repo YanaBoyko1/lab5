@@ -29,11 +29,13 @@ class Group:
         self.__students.append(student)
 
     def remove_student(self, student):
-        self.__students.remove(student)
+        if student in self.students:
+            self.students.remove(student)
+            print(f"Student {student._Student__name} removed from the group.")
+        else:
+            print(f"Student {student._Student__name} is not in the group.")
 
-    def get_info(self):
-        for student in self.__students:
-            student.get_info()
+    
 
 
 if __name__ == '__main__':
@@ -42,8 +44,9 @@ if __name__ == '__main__':
     studentAlice = Student("Alice", "Smith", [56, 5, 5, 5])
 
     group = Group()
-    group.add_student(student1)
-    group.add_student(student2)
-    group.add_student(student3)
+    group.add_student(studentAndy)
+    group.add_student(studentJohn)
+    group.add_student(studentAlice)
+    group.remove_student(studentAlice)
 
     group.get_info()
