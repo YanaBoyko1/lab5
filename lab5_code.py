@@ -31,9 +31,9 @@ class Group:
 
 
 if __name__ == '__main__':
-    student1 = Student("Andy", "Boyko", [3, 4, 5, 89])
-    student2 = Student("John", "Doe", [4, 5, 68, 7])
-    student3 = Student("Alice", "Smith", [56, 5, 5, 5])
+    studentAndy = Student("Andy", "Boyko", [3, 4, 5, 89])
+    studentJohn = Student("John", "Doe", [4, 5, 68, 7])
+    studentAlice = Student("Alice", "Smith", [56, 5, 5, 5])
 
     group = Group()
     group.add_student(student1)
