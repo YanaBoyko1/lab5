@@ -9,7 +9,7 @@ class Student:
         self.name = name
 
     def get_info(self):
-        print("Name:", self.name, "Last name:", self.last_name, "Rating:", self.rating())
+        print(f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}")
 
     def rating(self):
         """
