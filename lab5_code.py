@@ -12,6 +12,12 @@ class Student:
         print("Name:", self.__name, "Last name:", self.__lastName, "Rating:", self.rating())
 
     def rating(self):
+        """
+        Calculates the rating of the student based on their gpa marks.
+
+        Returns:
+        - float: Student's rating (average mark).
+        """
         return sum(self.__marks) / len(self.__marks)
 
 
