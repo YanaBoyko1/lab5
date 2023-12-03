@@ -36,9 +36,11 @@ class Group:
         else:
             print(f"Student {student._Student__name} is not in the group.")
 
+    def get_info(self):
+        for student in self.students:
+            student.get_info()
+
     
-
-
 if __name__ == '__main__':
     studentAndy = Student("Andy", "Boyko", [3, 4, 5, 89])
     studentJohn = Student("John", "Doe", [4, 5, 68, 7])
