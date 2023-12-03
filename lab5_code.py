@@ -3,8 +3,8 @@ class Student:
     __lastName = None
     __marks = None
 
-    def __init__(self, name, lastName, marks):
-        self.__marks = marks
+    def __init__(self, name, lastName, marks=None):
+        self.__marks = marks or []
         self.__lastName = lastName
         self.__name = name
 
@@ -14,6 +14,12 @@ class Student:
     def rating(self):
         """
         Calculates the rating of the student based on their gpa marks.
+        Returns:
+        - float: Student's rating (average mark).
+        """
+        if not self.__marks:
+            return 0
+        return sum(self.__marks) / len(self.__marks)
 
         Returns:
         - float: Student's rating (average mark).
