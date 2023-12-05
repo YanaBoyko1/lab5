@@ -4,7 +4,7 @@ class Student:
         self.last_name = last_name
         self.name = name
 
-    def get_info(self):
+    def __str__(self):
         print(f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}")
 
     def rating(self):
