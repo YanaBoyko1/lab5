@@ -5,7 +5,7 @@ class Student:
         self.name = name
 
     def __str__(self):
-        print(f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}")
+        return(f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}")
 
     def rating(self):
         """
