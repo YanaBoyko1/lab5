@@ -15,7 +15,7 @@ class Student:
         return sum(self.marks) / len(self.marks)
 
     def __str__(self):
-        return(f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}")
+        return f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}"
         
 class Group:
     def __init__(self):
