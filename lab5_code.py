@@ -46,6 +46,10 @@ if __name__ == '__main__':
     group.add_student(studentAndy)
     group.add_student(studentJohn)
     group.add_student(studentAlice)
-    group.remove_student(studentAlice)
 
-    group.get_info()
+    group.get_info_of_group()
+
+    group.remove_student(studentAlice)
+    
+    print("\nAfter removing student ")
+    group.get_info_of_group()
