@@ -14,7 +14,6 @@ class Student:
             return 0
         return sum(self.marks) / len(self.marks)
 
-
     def __str__(self):
         return(f"Name: {self.name}, Last name: {self.last_name}, Rating: {self.rating()}")
         
