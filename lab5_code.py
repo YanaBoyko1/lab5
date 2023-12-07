@@ -31,12 +31,13 @@ class Group:
         else:
             print(f"Student {student.name} is not in the group.")
 
-   def get_info_of_group(self):
-       if not self.students:
-          print("The group is empty.")
+    def get_info_of_group(self):
+        if not self.students:
+           print("The group is empty.")
         else:
-            for student in self.students:
-               print(student)
+          for student in self.students:
+            print(student)
+   
 
 if __name__ == '__main__':
     studentAndy = Student("Andy", "Boyko", [3, 4, 5, 89])
