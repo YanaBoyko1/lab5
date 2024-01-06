@@ -41,18 +41,18 @@ class Group:
        
 
 if __name__ == '__main__':
-    studentAndy = Student("Andy", "Boyko", [3, 4, 5, 89])
-    studentJohn = Student("John", "Doe", [4, 5, 68, 7])
-    studentAlice = Student("Alice", "Smith", [56, 5, 5, 5])
+    student_andy = Student("Andy", "Boyko", [3, 4, 5, 89])
+    student_john = Student("John", "Doe", [4, 5, 68, 7])
+    student_alice = Student("Alice", "Smith", [56, 5, 5, 5])
 
     group = Group()
-    group.add_student(studentAndy)
-    group.add_student(studentJohn)
-    group.add_student(studentAlice)
+    group.add_student(student_andy)
+    group.add_student(student_john)
+    group.add_student(student_alice)
 
     group.get_info_of_group()
 
-    group.remove_student(studentAlice)
+    group.remove_student(student_alice)
     
     print("\nAfter removing student ")
     group.get_info_of_group()
